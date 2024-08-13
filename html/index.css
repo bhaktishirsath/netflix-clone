@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+   
+   
+}
+:root
+{
+    --red:red;
+    --black:rgb(7, 7, 41);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background:grey ;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(237, 111, 111);
+}
+::selection{
+     background-color: var(--red);
+     animation: selec 5s;
+}
+/* body{ 
+    display: flex;
+     width: 100%;
+    height: 100%; 
+    background: url(/images/header-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;  
+   
+} */
+.front{
+    display: flex;
+    width: 100%;
+   height: 100%; 
+   background: url(/images/header-image.png);
+   /* opacity: 0.9; */
+   background-size: cover;
+   background-repeat: no-repeat;  
+  
+}
+.main-div .header{
+    padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     /* z-index: 1; */
+   
+}
+.main-div .header .logo{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    animation-name: log;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes log {
+    0%{
+        transform: scale(0);
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+}
+img{
+    z-index: 1;
+    padding: 20px;
+}
+.header .Options{
+    display: flex;
+    z-index: 1;
+    padding: 0px;
+    justify-content: space-between;
+   
+}
+.header .Options select{
+    background-color: aliceblue;
+    border: 2px solid gray;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+   
+.header .option{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    outline: none;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    border: none;
+    border-radius: 2px;
+}
+.header.option value{
+    height: 30px;
+    width: 100px;
+  
+}
+.header .Sign-in{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.Sign-in button{
+    background: var(--red);
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+}
+.header .content-main{
+    margin: 0px;
+    padding: 10px;
+  position: relative;
+    
+}
+.content-main .content{
+   display: flex;
+   /* padding: 90px 150px ; */
+   padding: 200px;
+    font-family: sans-serif;
+    font-size: 2rem;
+     color: white;
+     flex-direction: column;
+   align-items: center;
+  
+}
+/* .content-main .content
+{
+    gap: 0px;
+    align-content: center;
+} */
+.content-main .email{
+    padding: 20px;
+    /* display: flex; */
+    
+    align-content: center;
+   
+  
+}
+.content-main .email .d:hover{
+    padding: 2px;
+   border: 2px gray solid;
+   outline: 2px solid black;
+}
+
+.content-main .email .d{
+       height: 40px;
+       width: 300px;
+       padding: 10px;
+       background-color: rgb(223, 217, 217);
+    outline: none;
+    border: 2px rgb(55, 53, 53) solid;
+    border-radius: 4px;
+       
+}
+.content-main .email .d2{
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    color: wheat;
+    background-color: var(--red);
+    outline: none;
+    border: 2px red solid;
+    border-radius: 4px;
+    
+   
+}
+/* <!-- FEATURE-1 --> */ 
+.Container-page-1{
+    margin: 10 0px;
+    padding: 60px 12%;
+     background-color: black;
+     display: flex;
+     border: 1px solid rgb(99, 96, 96);
+     gap: 0px;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     box-shadow: 2px solid grey;
+}
+.field{
+   
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+     position: relative;
+     justify-content: space-between;
+} 
+.field .info{
+    flex-basis: 50%;
+    margin: 20px;
+ width: 100%;
+ padding: 20px;
+   height: 100%;
+  font-size: 2rem;
+   color: rgb(149, 144, 144);
+   border-radius: 8px;
+   position: relative;
+   z-index: 1;
+   
+      
+}
+.field  .img{
+    display: block;
+    width: 500px;
+    height: 500px;
+    
+}
+.field  .img img{
+    width: 500px;
+    height: 500px;
+          object-fit: cover;
+          transition: .3s;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+         
+        }
+        
+ /* Frequently Asked Question */
+ .fap{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    background: black;
+    color: white;
+ }
+ .fap h2{
+    font-size: 40px;
+
+ }
+ .accordion{
+    /* height: 100%; */
+    width: 100%;
+    margin:60px auto;
+    max-height: 750px;
+    
+    
+ }
+ .accordion li{
+   list-style: none;
+    width: 100%;
+    padding: 5px;
+ }
+ .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin: 2px;
+    cursor: pointer;
+    position: relative;
+ }
+ label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+
+ }
+ input[type="radio"]{
+    display: none;
+ }
+ .accordion .content{
+    background-color: #303030;
+   text-align: left;
+   padding: 0 20px;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.5s ,padding 0.5;
+ }
+ .accordion input[type="radio"]:checked+label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+ }
+ .accordion input[type="radio"]:checked + label ::after{
+    transform: rotate(135deg);
+ }
+ /* email */
+ .fap .fap2{
+    display: flex;
+    padding: 10px;
+    align-content: center;
+ }
+.fap  .fap2 .email1{
+   
+    text-align: center;
+}
+ .fap .fap2 .email1 .d3{
+height: 40px;
+width: 300px;
+border: 2px solid rgb(201, 198, 198);
+border-radius: 5px;
+}
+.fap .fap2 .email1 .d3:hover{
+    background-color: rgb(190, 188, 188);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.fap .fap2 .email1 .d4{
+    height: 40px;
+    width: 100px;
+    background-color:rgb(220, 36, 36);
+    border: red 2px solid;
+    border-radius: 5px;
+    }
+.fap .fap2 .email1 .d4:hover{
+        background-color: rgb(206, 93, 93);
+        border: 3px solid aliceblue;
+        border-radius: 5px;
+    }

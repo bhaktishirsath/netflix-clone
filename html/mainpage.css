@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.M{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    position: absolute;
+    top:40%;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    animation-name: log;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes log {
+    0%{
+        transform: scale(0);
+    }
+    
+    100%{
+        transform: scale(2);
+    }
+}
+img{
+    
+    z-index: 1;
+    padding: 20px;
+}
+a{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 300px;
+    color: black;
+}
